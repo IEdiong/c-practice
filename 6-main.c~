@@ -18,16 +18,11 @@ int main(void)
 	n = 98;
 	p = &n;
 	printf("Value of 'c': %d ('%c')\n", c, c);
-	printf("Address of 'c': %p\n", &c);
-	printf("Value of 'pp': %p\n", pp);
+	printf("Address of 'c': %p\n", &n);
 	printf("Value of 'n': %d\n", n);
-	printf("Address of 'n': %p\n", &n);
+	printf("Address of variable 'n': %p\n", &n);
 	printf("Value of 'p': %p\n", p);
 	*p = 402;
-	*pp = 'o';
 	printf("Value of 'n': %d\n", n);
-	printf("Value of '*pp': %d\n", *pp);
-	printf("Value of 'c': %d ('%c')\n", c, c);
-	printf("Value of '*pp': %d ('%c')\n", *pp, *pp);
 	return (0);
 }
